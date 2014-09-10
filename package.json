@@ -1,0 +1,30 @@
+{
+  "name": "format-location",
+  "version": "0.0.0",
+  "description": "Format location objects in a number of standard ways",
+  "author": "Good Eggs <open-source@goodeggs.com>",
+  "contributors": [
+    "Max Edmands <me@maxedmands.com>"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/goodeggs/formatLocation.git"
+  },
+  "homepage": "https://github.com/goodeggs/formatLocation",
+  "bugs": "https://github.com/goodeggs/formatLocation/issues",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "coffee-script": ">=1.7.x",
+    "mocha": "~1.x.x"
+  },
+  "scripts": {
+    "compile": "coffee --bare --compile --output lib/ src/",
+    "build": "npm run compile",
+    "test": "mocha",
+  
+    "pretest": "npm run build"
+  }
+}
