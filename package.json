@@ -14,17 +14,18 @@
   },
   "homepage": "https://github.com/goodeggs/formatLocation",
   "bugs": "https://github.com/goodeggs/formatLocation/issues",
-  "dependencies": {
-  },
   "devDependencies": {
     "coffee-script": ">=1.7.x",
-    "mocha": "~1.x.x"
+    "mocha": "^1.x.x",
+    "chai": "^1.9.1"
   },
   "scripts": {
     "compile": "coffee --bare --compile --output lib/ src/",
     "build": "npm run compile",
     "test": "mocha",
-  
     "pretest": "npm run build"
+  },
+  "dependencies": {
+    "clone": "^0.1.18"
   }
 }

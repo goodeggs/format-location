@@ -1,3 +1,33 @@
-process.on 'uncaughtException', (err) ->
-  console.error err.trace
-  process.exit -1
+clone = require 'clone'
+
+_locationFormats =
+  full: ['%(addressLine), %(city), %(state) %(zip)', ', ']
+  fullMultiline: ['%(addressLine)\n%(city), %(state) %(zip)', '\n']
+  city: ['%(addressLine), %(city)', ', ']
+  zip: ['%(addressLine), %(zip)', ', ']
+  cityStateZip: ['%(city), %(state) %(zip)', '']
+  short: ['%(addressLine)', ', ']
+  shortMultiline: ['%(addressLine)', '\n']
+  shortVague: ['%(vagueAddress)', ', ']
+
+formatObject = (obj, formatString) ->
+  paramRegex = /%\((\w+)\)/g
+  formatString.replace paramRegex, (match, key) ->
+    obj[key] or ''
+
+containsText = (string) ->
+  !!(string?.trim().length)
+
+module.exports = formatLocation = (location, formatString) ->
+  # if there isn't `city`, `zip` and `state`, assume this location object hasn't been converted
+  # to the full details structure and the entire address is in the `address` field
+  return location.address unless location.city and location.zip and location.state
+
+  [format, addressLineSeparator] = _locationFormats[formatString] or [formatString, ', ']
+  location = clone(location)
+
+  location.addressLine = [location.address, location.address2].filter(containsText).join(addressLineSeparator)
+  location.vagueAddress = location.vagueAddress or location.addressLine
+  formatObject location, format
+
+formatLocation.formats = _locationFormats
