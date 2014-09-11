@@ -1,6 +1,6 @@
 {
   "name": "format-location",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Format location objects in a number of standard ways",
   "author": "Good Eggs <open-source@goodeggs.com>",
   "contributors": [
@@ -24,8 +24,5 @@
     "build": "npm run compile",
     "test": "mocha",
     "pretest": "npm run build"
-  },
-  "dependencies": {
-    "clone": "^0.1.18"
   }
 }
