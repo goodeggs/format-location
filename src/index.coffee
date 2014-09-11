@@ -1,5 +1,3 @@
-clone = require 'clone'
-
 _locationFormats =
   full: ['%(addressLine), %(city), %(state) %(zip)', ', ']
   fullMultiline: ['%(addressLine)\n%(city), %(state) %(zip)', '\n']
@@ -24,7 +22,8 @@ module.exports = formatLocation = (location, formatString) ->
   return location.address unless location.city and location.zip and location.state
 
   [format, addressLineSeparator] = _locationFormats[formatString] or [formatString, ', ']
-  location = clone(location)
+
+  location = JSON.parse(JSON.stringify(location))
 
   location.addressLine = [location.address, location.address2].filter(containsText).join(addressLineSeparator)
   location.vagueAddress = location.vagueAddress or location.addressLine

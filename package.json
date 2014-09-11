@@ -24,8 +24,5 @@
     "build": "npm run compile",
     "test": "mocha",
     "pretest": "npm run build"
-  },
-  "dependencies": {
-    "clone": "^0.1.18"
   }
 }
