@@ -1,6 +1,6 @@
 {
   "name": "format-location",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Format location objects in a number of standard ways",
   "author": "Good Eggs <open-source@goodeggs.com>",
   "contributors": [
