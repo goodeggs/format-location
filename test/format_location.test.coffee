@@ -12,10 +12,15 @@ describe 'formatLocation', ->
       city: 'San Francisco'
       state: 'CA'
       zip: '94110'
+      coordinates:
+        latitude: '37.7627904'
+        longitude: '-122.4084761'
 
   it 'formats the full address', ->
-    console.log 'in a test'
     expect(formatLocation(location, 'full')).to.equal '530 Hampshire Street, Suite 301, San Francisco, CA 94110'
+
+  it 'formats the full geocoded address', ->
+    expect(formatLocation(location, 'fullGeocoded')).to.equal '530 Hampshire Street, Suite 301, San Francisco, CA 94110@37.7627904,-122.4084761'
 
   it 'formats the full multiline address', ->
     expect(formatLocation(location, 'fullMultiline')).to.equal '530 Hampshire Street\nSuite 301\nSan Francisco, CA 94110'

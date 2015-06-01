@@ -1,5 +1,6 @@
 _locationFormats =
   full: ['%(addressLine), %(city), %(state) %(zip)', ', ']
+  fullGeocoded: ['%(addressLine), %(city), %(state) %(zip)@%(lat),%(lng)', ', ']
   fullMultiline: ['%(addressLine)\n%(city), %(state) %(zip)', '\n']
   city: ['%(addressLine), %(city)', ', ']
   zip: ['%(addressLine), %(zip)', ', ']
@@ -27,6 +28,9 @@ module.exports = formatLocation = (location, formatString) ->
 
   location.addressLine = [location.address, location.address2].filter(containsText).join(addressLineSeparator)
   location.vagueAddress = location.vagueAddress or location.addressLine
+  coords = location.coordinates ? location.coords
+  location.lat = coords?.latitude ? coords?.lat
+  location.lng = coords?.longitude ? coords?.lng
   formatObject location, format
 
 formatLocation.formats = _locationFormats
