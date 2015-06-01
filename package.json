@@ -24,5 +24,9 @@
     "build": "npm run compile",
     "test": "mocha",
     "pretest": "npm run build"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "always-auth": true
   }
 }
