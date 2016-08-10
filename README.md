@@ -3,7 +3,7 @@
 
 
 
-[![Build Status](https://travis-ci.org/goodeggs/formatLocation.png)](https://travis-ci.org/goodeggs/formatLocation)
+[![Build Status](https://travis-ci.org/goodeggs/format-location.png)](https://travis-ci.org/goodeggs/format-location)
 
 
 Format location objects in a number of standard ways
@@ -11,7 +11,7 @@ Format location objects in a number of standard ways
 ## Contributing
 
 ```
-$ git clone https://github.com/goodeggs/formatLocation && cd formatLocation
+$ git clone https://github.com/goodeggs/format-location && cd format-location
 $ npm install
 $ npm test
 ```

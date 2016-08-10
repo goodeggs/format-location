@@ -10,10 +10,10 @@
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/goodeggs/formatLocation.git"
+    "url": "git://github.com/goodeggs/format-location.git"
   },
-  "homepage": "https://github.com/goodeggs/formatLocation",
-  "bugs": "https://github.com/goodeggs/formatLocation/issues",
+  "homepage": "https://github.com/goodeggs/format-location",
+  "bugs": "https://github.com/goodeggs/format-location/issues",
   "devDependencies": {
     "coffee-script": ">=1.7.x",
     "mocha": "^1.x.x",
