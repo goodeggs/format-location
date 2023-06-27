@@ -18,6 +18,8 @@
     "@babel/cli": "^7.22.5",
     "@babel/core": "^7.22.5",
     "@babel/preset-env": "^7.22.5",
+    "@babel/preset-typescript": "^7.22.5",
+    "@goodeggs/toolkit": "^7.0.1",
     "chai": "^1.9.1",
     "coffee-script": ">=1.7.x",
     "mocha": "^1.x.x"
@@ -25,6 +27,10 @@
   "scripts": {
     "compile": "coffee --bare --compile --output lib/ src/",
     "build": "yarn run compile",
+    "lint": "yarn run lint:src ",
+    "lint:fix": "getk run fix-es --ignore-path .gitignore",
+    "lint:src": "yarn run lint:src:glob '**/*.{js,jsx,ts,tsx}'",
+    "lint:src:glob": "getk run lint-es --ignore-path .gitignore",
     "test": "mocha",
     "pretest": "yarn run build"
   },
