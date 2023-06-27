@@ -21,9 +21,9 @@
   },
   "scripts": {
     "compile": "coffee --bare --compile --output lib/ src/",
-    "build": "npm run compile",
+    "build": "yarn run compile",
     "test": "mocha",
-    "pretest": "npm run build"
+    "pretest": "yarn run build"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
