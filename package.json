@@ -15,9 +15,12 @@
   "homepage": "https://github.com/goodeggs/format-location",
   "bugs": "https://github.com/goodeggs/format-location/issues",
   "devDependencies": {
+    "@babel/cli": "^7.22.5",
+    "@babel/core": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "chai": "^1.9.1",
     "coffee-script": ">=1.7.x",
-    "mocha": "^1.x.x",
-    "chai": "^1.9.1"
+    "mocha": "^1.x.x"
   },
   "scripts": {
     "compile": "coffee --bare --compile --output lib/ src/",
