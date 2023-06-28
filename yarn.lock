@@ -864,6 +864,16 @@
     "@babel/plugin-transform-modules-commonjs" "^7.22.5"
     "@babel/plugin-transform-typescript" "^7.22.5"
 
+"@babel/register@^7.22.5":
+  version "7.22.5"
+  resolved "https://npm.goodeggs.com/@babel%2fregister/-/register-7.22.5.tgz#e4d8d0f615ea3233a27b5c6ada6750ee59559939"
+  dependencies:
+    clone-deep "^4.0.1"
+    find-cache-dir "^2.0.0"
+    make-dir "^2.1.0"
+    pirates "^4.0.5"
+    source-map-support "^0.5.16"
+
 "@babel/regjsgen@^0.8.0":
   version "0.8.0"
   resolved "https://npm.goodeggs.com/@babel%2fregjsgen/-/regjsgen-0.8.0.tgz#f0ba69b075e1f05fb2825b7fad991e7adbb18310"
@@ -1050,6 +1060,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@types/chai@^4.3.5":
+  version "4.3.5"
+  resolved "https://npm.goodeggs.com/@types%2fchai/-/chai-4.3.5.tgz#ae69bcbb1bebb68c4ac0b11e9d8ed04526b3562b"
+
 "@types/eslint@^8.4.6":
   version "8.40.2"
   resolved "https://npm.goodeggs.com/@types%2feslint/-/eslint-8.40.2.tgz#2833bc112d809677864a4b0e7d1de4f04d7dac2d"
@@ -1079,6 +1093,10 @@
 "@types/minimatch@^5.1.2":
   version "5.1.2"
   resolved "https://npm.goodeggs.com/@types%2fminimatch/-/minimatch-5.1.2.tgz#07508b45797cb81ec3f273011b054cd0755eddca"
+
+"@types/mocha@^10.0.1":
+  version "10.0.1"
+  resolved "https://npm.goodeggs.com/@types%2fmocha/-/mocha-10.0.1.tgz#2f4f65bb08bc368ac39c96da7b2f09140b26851b"
 
 "@types/node@*":
   version "20.3.2"
@@ -1203,15 +1221,23 @@ ajv@^6.10.0, ajv@^6.12.4:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
-ansi-colors@4.1.1:
-  version "4.1.1"
-  resolved "https://npm.goodeggs.com/ansi-colors/-/ansi-colors-4.1.1.tgz#cbb9ae256bf750af1eab344f229aa27fe94ba348"
+ansi-colors@3.2.3:
+  version "3.2.3"
+  resolved "https://npm.goodeggs.com/ansi-colors/-/ansi-colors-3.2.3.tgz#57d35b8686e851e2cc04c403f1c00203976a1813"
 
 ansi-escapes@^4.3.0:
   version "4.3.2"
   resolved "https://npm.goodeggs.com/ansi-escapes/-/ansi-escapes-4.3.2.tgz#6b2291d1db7d98b6521d5f1efa42d0f3a9feb65e"
   dependencies:
     type-fest "^0.21.3"
+
+ansi-regex@^3.0.0:
+  version "3.0.1"
+  resolved "https://npm.goodeggs.com/ansi-regex/-/ansi-regex-3.0.1.tgz#123d6479e92ad45ad897d4054e3c7ca7db4944e1"
+
+ansi-regex@^4.1.0:
+  version "4.1.1"
+  resolved "https://npm.goodeggs.com/ansi-regex/-/ansi-regex-4.1.1.tgz#164daac87ab2d6f6db3a29875e2d1766582dabed"
 
 ansi-regex@^5.0.1:
   version "5.0.1"
@@ -1221,7 +1247,7 @@ ansi-regex@^6.0.1:
   version "6.0.1"
   resolved "https://npm.goodeggs.com/ansi-regex/-/ansi-regex-6.0.1.tgz#3183e38fae9a65d7cb5e53945cd5897d0260a06a"
 
-ansi-styles@^3.2.1:
+ansi-styles@^3.2.0, ansi-styles@^3.2.1:
   version "3.2.1"
   resolved "https://npm.goodeggs.com/ansi-styles/-/ansi-styles-3.2.1.tgz#41fbb20243e50b12be0f04b8dedbf07520ce841d"
   dependencies:
@@ -1293,6 +1319,16 @@ array.prototype.flatmap@^1.3.1:
     es-abstract "^1.20.4"
     es-shim-unscopables "^1.0.0"
 
+array.prototype.reduce@^1.0.5:
+  version "1.0.5"
+  resolved "https://npm.goodeggs.com/array.prototype.reduce/-/array.prototype.reduce-1.0.5.tgz#6b20b0daa9d9734dd6bc7ea66b5bbce395471eac"
+  dependencies:
+    call-bind "^1.0.2"
+    define-properties "^1.1.4"
+    es-abstract "^1.20.4"
+    es-array-method-boxes-properly "^1.0.0"
+    is-string "^1.0.7"
+
 array.prototype.tosorted@^1.1.1:
   version "1.1.1"
   resolved "https://npm.goodeggs.com/array.prototype.tosorted/-/array.prototype.tosorted-1.1.1.tgz#ccf44738aa2b5ac56578ffda97c03fd3e23dd532"
@@ -1303,9 +1339,9 @@ array.prototype.tosorted@^1.1.1:
     es-shim-unscopables "^1.0.0"
     get-intrinsic "^1.1.3"
 
-assertion-error@1.0.0:
-  version "1.0.0"
-  resolved "https://npm.goodeggs.com/assertion-error/-/assertion-error-1.0.0.tgz#c7f85438fdd466bc7ca16ab90c81513797a5d23b"
+assertion-error@^1.1.0:
+  version "1.1.0"
+  resolved "https://npm.goodeggs.com/assertion-error/-/assertion-error-1.1.0.tgz#e60b6b0e8f301bd97e5375215bda406c85118c0b"
 
 astral-regex@^2.0.0:
   version "2.0.0"
@@ -1351,12 +1387,6 @@ brace-expansion@^1.1.7:
     balanced-match "^1.0.0"
     concat-map "0.0.1"
 
-brace-expansion@^2.0.1:
-  version "2.0.1"
-  resolved "https://npm.goodeggs.com/brace-expansion/-/brace-expansion-2.0.1.tgz#1edc459e0f0c548486ecf9fc99f2221364b9a0ae"
-  dependencies:
-    balanced-match "^1.0.0"
-
 braces@^3.0.2, braces@~3.0.2:
   version "3.0.2"
   resolved "https://npm.goodeggs.com/braces/-/braces-3.0.2.tgz#3454e1a462ee8d599e236df336cd9ea4f8afe107"
@@ -1375,6 +1405,10 @@ browserslist@^4.21.3, browserslist@^4.21.5:
     electron-to-chromium "^1.4.431"
     node-releases "^2.0.12"
     update-browserslist-db "^1.0.11"
+
+buffer-from@^1.0.0:
+  version "1.1.2"
+  resolved "https://npm.goodeggs.com/buffer-from/-/buffer-from-1.1.2.tgz#2b146a6fd72e80b4f55d255f35ed59a3a9a41bd5"
 
 builtin-modules@^3.3.0:
   version "3.3.0"
@@ -1407,22 +1441,27 @@ callsites@^3.0.0:
   version "3.1.0"
   resolved "https://npm.goodeggs.com/callsites/-/callsites-3.1.0.tgz#b3630abd8943432f54b3f0519238e33cd7df2f73"
 
-camelcase@^6.0.0:
-  version "6.3.0"
-  resolved "https://npm.goodeggs.com/camelcase/-/camelcase-6.3.0.tgz#5685b95eb209ac9c0c177467778c9c84df58ba9a"
+camelcase@^5.0.0:
+  version "5.3.1"
+  resolved "https://npm.goodeggs.com/camelcase/-/camelcase-5.3.1.tgz#e3c9b31569e106811df242f715725a1f4c494320"
 
 caniuse-lite@^1.0.30001503:
   version "1.0.30001508"
   resolved "https://npm.goodeggs.com/caniuse-lite/-/caniuse-lite-1.0.30001508.tgz#4461bbc895c692a96da399639cc1e146e7302a33"
 
-chai@^1.9.1:
-  version "1.10.0"
-  resolved "https://npm.goodeggs.com/chai/-/chai-1.10.0.tgz#e4031cc87654461a75943e5a35ab46eaf39c1eb9"
+chai@^4.3.7:
+  version "4.3.7"
+  resolved "https://npm.goodeggs.com/chai/-/chai-4.3.7.tgz#ec63f6df01829088e8bf55fca839bcd464a8ec51"
   dependencies:
-    assertion-error "1.0.0"
-    deep-eql "0.1.3"
+    assertion-error "^1.1.0"
+    check-error "^1.0.2"
+    deep-eql "^4.1.2"
+    get-func-name "^2.0.0"
+    loupe "^2.3.1"
+    pathval "^1.1.1"
+    type-detect "^4.0.5"
 
-chalk@^2.0.0, chalk@^2.4.2:
+chalk@^2.0.0, chalk@^2.0.1, chalk@^2.4.2:
   version "2.4.2"
   resolved "https://npm.goodeggs.com/chalk/-/chalk-2.4.2.tgz#cd42541677a54333cf541a49108c1432b44c9424"
   dependencies:
@@ -1430,14 +1469,18 @@ chalk@^2.0.0, chalk@^2.4.2:
     escape-string-regexp "^1.0.5"
     supports-color "^5.3.0"
 
-chalk@^4.0.0, chalk@^4.1.0:
+chalk@^4.0.0:
   version "4.1.2"
   resolved "https://npm.goodeggs.com/chalk/-/chalk-4.1.2.tgz#aac4e2b7734a740867aeb16bf02aad556a1e7a01"
   dependencies:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
 
-chokidar@3.5.3, chokidar@^3.4.0:
+check-error@^1.0.2:
+  version "1.0.2"
+  resolved "https://npm.goodeggs.com/check-error/-/check-error-1.0.2.tgz#574d312edd88bb5dd8912e9286dd6c0aed4aac82"
+
+chokidar@^3.4.0:
   version "3.5.3"
   resolved "https://npm.goodeggs.com/chokidar/-/chokidar-3.5.3.tgz#1cf37c8707b932bd1af1ae22c0432e2acd1903bd"
   dependencies:
@@ -1489,13 +1532,13 @@ cli-truncate@^3.1.0:
     slice-ansi "^5.0.0"
     string-width "^5.0.0"
 
-cliui@^7.0.2:
-  version "7.0.4"
-  resolved "https://npm.goodeggs.com/cliui/-/cliui-7.0.4.tgz#a0265ee655476fc807aea9df3df8df7783808b4f"
+cliui@^5.0.0:
+  version "5.0.0"
+  resolved "https://npm.goodeggs.com/cliui/-/cliui-5.0.0.tgz#deefcfdb2e800784aa34f46fa08e06851c7bbbc5"
   dependencies:
-    string-width "^4.2.0"
-    strip-ansi "^6.0.0"
-    wrap-ansi "^7.0.0"
+    string-width "^3.1.0"
+    strip-ansi "^5.2.0"
+    wrap-ansi "^5.1.0"
 
 cliui@^8.0.1:
   version "8.0.1"
@@ -1504,6 +1547,14 @@ cliui@^8.0.1:
     string-width "^4.2.0"
     strip-ansi "^6.0.1"
     wrap-ansi "^7.0.0"
+
+clone-deep@^4.0.1:
+  version "4.0.1"
+  resolved "https://npm.goodeggs.com/clone-deep/-/clone-deep-4.0.1.tgz#c19fd9bdbbf85942b4fd979c84dcf7d5f07c2387"
+  dependencies:
+    is-plain-object "^2.0.4"
+    kind-of "^6.0.2"
+    shallow-clone "^3.0.0"
 
 color-convert@^1.9.0:
   version "1.9.3"
@@ -1536,6 +1587,10 @@ commander@^4.0.1:
 commander@^9.3.0:
   version "9.5.0"
   resolved "https://npm.goodeggs.com/commander/-/commander-9.5.0.tgz#bc08d1eb5cedf7ccb797a96199d41c7bc3e60d30"
+
+commondir@^1.0.1:
+  version "1.0.1"
+  resolved "https://npm.goodeggs.com/commondir/-/commondir-1.0.1.tgz#ddd800da0c66127393cca5950ea968a3aaf1253b"
 
 concat-map@0.0.1:
   version "0.0.1"
@@ -1592,11 +1647,11 @@ cross-spawn@^7.0.2, cross-spawn@^7.0.3:
     shebang-command "^2.0.0"
     which "^2.0.1"
 
-debug@4.3.4, debug@^4.1.0, debug@^4.1.1, debug@^4.3.2, debug@^4.3.4:
-  version "4.3.4"
-  resolved "https://npm.goodeggs.com/debug/-/debug-4.3.4.tgz#1319f6579357f2338d3337d2cdd4914bb5dcc865"
+debug@3.2.6:
+  version "3.2.6"
+  resolved "https://npm.goodeggs.com/debug/-/debug-3.2.6.tgz#e83d17de16d8a7efb7717edbe5fb10135eee629b"
   dependencies:
-    ms "2.1.2"
+    ms "^2.1.1"
 
 debug@^3.2.7:
   version "3.2.7"
@@ -1604,30 +1659,36 @@ debug@^3.2.7:
   dependencies:
     ms "^2.1.1"
 
-decamelize@^4.0.0:
-  version "4.0.0"
-  resolved "https://npm.goodeggs.com/decamelize/-/decamelize-4.0.0.tgz#aa472d7bf660eb15f3494efd531cab7f2a709837"
-
-deep-eql@0.1.3:
-  version "0.1.3"
-  resolved "https://npm.goodeggs.com/deep-eql/-/deep-eql-0.1.3.tgz#ef558acab8de25206cd713906d74e56930eb69f2"
+debug@^4.1.0, debug@^4.1.1, debug@^4.3.2, debug@^4.3.4:
+  version "4.3.4"
+  resolved "https://npm.goodeggs.com/debug/-/debug-4.3.4.tgz#1319f6579357f2338d3337d2cdd4914bb5dcc865"
   dependencies:
-    type-detect "0.1.1"
+    ms "2.1.2"
+
+decamelize@^1.2.0:
+  version "1.2.0"
+  resolved "https://npm.goodeggs.com/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
+
+deep-eql@^4.1.2:
+  version "4.1.3"
+  resolved "https://npm.goodeggs.com/deep-eql/-/deep-eql-4.1.3.tgz#7c7775513092f7df98d8df9996dd085eb668cc6d"
+  dependencies:
+    type-detect "^4.0.0"
 
 deep-is@^0.1.3:
   version "0.1.4"
   resolved "https://npm.goodeggs.com/deep-is/-/deep-is-0.1.4.tgz#a6f2dce612fadd2ef1f519b73551f17e85199831"
 
-define-properties@^1.1.3, define-properties@^1.1.4, define-properties@^1.2.0:
+define-properties@^1.1.2, define-properties@^1.1.3, define-properties@^1.1.4, define-properties@^1.2.0:
   version "1.2.0"
   resolved "https://npm.goodeggs.com/define-properties/-/define-properties-1.2.0.tgz#52988570670c9eacedd8064f4a990f2405849bd5"
   dependencies:
     has-property-descriptors "^1.0.0"
     object-keys "^1.1.1"
 
-diff@5.0.0:
-  version "5.0.0"
-  resolved "https://npm.goodeggs.com/diff/-/diff-5.0.0.tgz#7ed6ad76d859d030787ec35855f5b1daf31d852b"
+diff@3.5.0:
+  version "3.5.0"
+  resolved "https://npm.goodeggs.com/diff/-/diff-3.5.0.tgz#800c0dd1e0a8bfbc95835c202ad220fe317e5a12"
 
 dir-glob@^3.0.1:
   version "3.0.1"
@@ -1655,6 +1716,10 @@ electron-to-chromium@^1.4.431:
   version "1.4.442"
   resolved "https://npm.goodeggs.com/electron-to-chromium/-/electron-to-chromium-1.4.442.tgz#455f4c5bd6ae73afb634dcffee6f356c26c8e294"
 
+emoji-regex@^7.0.1:
+  version "7.0.3"
+  resolved "https://npm.goodeggs.com/emoji-regex/-/emoji-regex-7.0.3.tgz#933a04052860c85e83c122479c4748a8e4c72156"
+
 emoji-regex@^8.0.0:
   version "8.0.0"
   resolved "https://npm.goodeggs.com/emoji-regex/-/emoji-regex-8.0.0.tgz#e818fd69ce5ccfcb404594f842963bf53164cc37"
@@ -1675,7 +1740,7 @@ error-ex@^1.3.1:
   dependencies:
     is-arrayish "^0.2.1"
 
-es-abstract@^1.19.0, es-abstract@^1.20.4:
+es-abstract@^1.19.0, es-abstract@^1.20.4, es-abstract@^1.21.2:
   version "1.21.2"
   resolved "https://npm.goodeggs.com/es-abstract/-/es-abstract-1.21.2.tgz#a56b9695322c8a185dc25975aa3b8ec31d0e7eff"
   dependencies:
@@ -1714,6 +1779,10 @@ es-abstract@^1.19.0, es-abstract@^1.20.4:
     unbox-primitive "^1.0.2"
     which-typed-array "^1.1.9"
 
+es-array-method-boxes-properly@^1.0.0:
+  version "1.0.0"
+  resolved "https://npm.goodeggs.com/es-array-method-boxes-properly/-/es-array-method-boxes-properly-1.0.0.tgz#873f3e84418de4ee19c5be752990b2e44718d09e"
+
 es-set-tostringtag@^2.0.1:
   version "2.0.1"
   resolved "https://npm.goodeggs.com/es-set-tostringtag/-/es-set-tostringtag-2.0.1.tgz#338d502f6f674301d710b80c8592de8a15f09cd8"
@@ -1740,13 +1809,13 @@ escalade@^3.1.1:
   version "3.1.1"
   resolved "https://npm.goodeggs.com/escalade/-/escalade-3.1.1.tgz#d8cfdc7000965c5a0174b4a82eaa5c0552742e40"
 
-escape-string-regexp@4.0.0, escape-string-regexp@^4.0.0:
-  version "4.0.0"
-  resolved "https://npm.goodeggs.com/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz#14ba83a5d373e3d311e5afca29cf5bfad965bf34"
-
-escape-string-regexp@^1.0.5:
+escape-string-regexp@1.0.5, escape-string-regexp@^1.0.5:
   version "1.0.5"
   resolved "https://npm.goodeggs.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
+
+escape-string-regexp@^4.0.0:
+  version "4.0.0"
+  resolved "https://npm.goodeggs.com/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz#14ba83a5d373e3d311e5afca29cf5bfad965bf34"
 
 eslint-config-prettier@^8.5.0:
   version "8.8.0"
@@ -2066,18 +2135,32 @@ fill-range@^7.0.1:
   dependencies:
     to-regex-range "^5.0.1"
 
-find-up@5.0.0, find-up@^5.0.0:
-  version "5.0.0"
-  resolved "https://npm.goodeggs.com/find-up/-/find-up-5.0.0.tgz#4c92819ecb7083561e4f4a240a86be5198f536fc"
+find-cache-dir@^2.0.0:
+  version "2.1.0"
+  resolved "https://npm.goodeggs.com/find-cache-dir/-/find-cache-dir-2.1.0.tgz#8d0f94cd13fe43c6c7c261a0d86115ca918c05f7"
   dependencies:
-    locate-path "^6.0.0"
-    path-exists "^4.0.0"
+    commondir "^1.0.1"
+    make-dir "^2.0.0"
+    pkg-dir "^3.0.0"
+
+find-up@3.0.0, find-up@^3.0.0:
+  version "3.0.0"
+  resolved "https://npm.goodeggs.com/find-up/-/find-up-3.0.0.tgz#49169f1d7993430646da61ecc5ae355c21c97b73"
+  dependencies:
+    locate-path "^3.0.0"
 
 find-up@^4.0.0, find-up@^4.1.0:
   version "4.1.0"
   resolved "https://npm.goodeggs.com/find-up/-/find-up-4.1.0.tgz#97afe7d6cdc0bc5928584b7c8d7b16e8a9aa5d19"
   dependencies:
     locate-path "^5.0.0"
+    path-exists "^4.0.0"
+
+find-up@^5.0.0:
+  version "5.0.0"
+  resolved "https://npm.goodeggs.com/find-up/-/find-up-5.0.0.tgz#4c92819ecb7083561e4f4a240a86be5198f536fc"
+  dependencies:
+    locate-path "^6.0.0"
     path-exists "^4.0.0"
 
 flat-cache@^3.0.4:
@@ -2087,9 +2170,11 @@ flat-cache@^3.0.4:
     flatted "^3.1.0"
     rimraf "^3.0.2"
 
-flat@^5.0.2:
-  version "5.0.2"
-  resolved "https://npm.goodeggs.com/flat/-/flat-5.0.2.tgz#8ca6fe332069ffa9d324c327198c598259ceb241"
+flat@^4.1.0:
+  version "4.1.1"
+  resolved "https://npm.goodeggs.com/flat/-/flat-4.1.1.tgz#a392059cc382881ff98642f5da4dde0a959f309b"
+  dependencies:
+    is-buffer "~2.0.3"
 
 flatted@^3.1.0:
   version "3.2.7"
@@ -2134,9 +2219,13 @@ gensync@^1.0.0-beta.2:
   version "1.0.0-beta.2"
   resolved "https://npm.goodeggs.com/gensync/-/gensync-1.0.0-beta.2.tgz#32a6ee76c3d7f52d46b2b1ae5d93fea8580a25e0"
 
-get-caller-file@^2.0.5:
+get-caller-file@^2.0.1, get-caller-file@^2.0.5:
   version "2.0.5"
   resolved "https://npm.goodeggs.com/get-caller-file/-/get-caller-file-2.0.5.tgz#4f94412a82db32f36e3b0b9741f8a97feb031f7e"
+
+get-func-name@^2.0.0:
+  version "2.0.0"
+  resolved "https://npm.goodeggs.com/get-func-name/-/get-func-name-2.0.0.tgz#ead774abee72e20409433a066366023dd6887a41"
 
 get-intrinsic@^1.0.2, get-intrinsic@^1.1.1, get-intrinsic@^1.1.3, get-intrinsic@^1.2.0:
   version "1.2.1"
@@ -2180,9 +2269,9 @@ glob-parent@^6.0.2:
   dependencies:
     is-glob "^4.0.3"
 
-glob@7.2.0:
-  version "7.2.0"
-  resolved "https://npm.goodeggs.com/glob/-/glob-7.2.0.tgz#d15535af7732e02e948f4c41628bd910293f6023"
+glob@7.1.3:
+  version "7.1.3"
+  resolved "https://npm.goodeggs.com/glob/-/glob-7.1.3.tgz#3960832d3f1574108342dafd3a67b332c0969df1"
   dependencies:
     fs.realpath "^1.0.0"
     inflight "^1.0.4"
@@ -2243,6 +2332,10 @@ graphemer@^1.4.0:
   version "1.4.0"
   resolved "https://npm.goodeggs.com/graphemer/-/graphemer-1.4.0.tgz#fb2f1d55e0e3a1849aeffc90c4fa0dd53a0e66c6"
 
+growl@1.10.5:
+  version "1.10.5"
+  resolved "https://npm.goodeggs.com/growl/-/growl-1.10.5.tgz#f2735dc2283674fa67478b10181059355c369e5e"
+
 has-bigints@^1.0.1, has-bigints@^1.0.2:
   version "1.0.2"
   resolved "https://npm.goodeggs.com/has-bigints/-/has-bigints-1.0.2.tgz#0871bd3e3d51626f6ca0966668ba35d5602d6eaa"
@@ -2265,7 +2358,7 @@ has-proto@^1.0.1:
   version "1.0.1"
   resolved "https://npm.goodeggs.com/has-proto/-/has-proto-1.0.1.tgz#1885c1305538958aff469fef37937c22795408e0"
 
-has-symbols@^1.0.2, has-symbols@^1.0.3:
+has-symbols@^1.0.0, has-symbols@^1.0.2, has-symbols@^1.0.3:
   version "1.0.3"
   resolved "https://npm.goodeggs.com/has-symbols/-/has-symbols-1.0.3.tgz#bb7b2c4349251dce87b125f7bdf874aa7c8b39f8"
 
@@ -2385,6 +2478,10 @@ is-boolean-object@^1.1.0:
     call-bind "^1.0.2"
     has-tostringtag "^1.0.0"
 
+is-buffer@~2.0.3:
+  version "2.0.5"
+  resolved "https://npm.goodeggs.com/is-buffer/-/is-buffer-2.0.5.tgz#ebc252e400d22ff8d77fa09888821a24a658c191"
+
 is-builtin-module@^3.1.0:
   version "3.2.1"
   resolved "https://npm.goodeggs.com/is-builtin-module/-/is-builtin-module-3.2.1.tgz#f03271717d8654cfcaf07ab0463faa3571581169"
@@ -2414,6 +2511,10 @@ is-directory@^0.3.1:
 is-extglob@^2.1.1:
   version "2.1.1"
   resolved "https://npm.goodeggs.com/is-extglob/-/is-extglob-2.1.1.tgz#a88c02535791f02ed37c76a1b9ea9773c833f8c2"
+
+is-fullwidth-code-point@^2.0.0:
+  version "2.0.0"
+  resolved "https://npm.goodeggs.com/is-fullwidth-code-point/-/is-fullwidth-code-point-2.0.0.tgz#a3b30a5c4f199183167aaab93beefae3ddfb654f"
 
 is-fullwidth-code-point@^3.0.0:
   version "3.0.0"
@@ -2447,9 +2548,11 @@ is-path-inside@^3.0.3:
   version "3.0.3"
   resolved "https://npm.goodeggs.com/is-path-inside/-/is-path-inside-3.0.3.tgz#d231362e53a07ff2b0e0ea7fed049161ffd16283"
 
-is-plain-obj@^2.1.0:
-  version "2.1.0"
-  resolved "https://npm.goodeggs.com/is-plain-obj/-/is-plain-obj-2.1.0.tgz#45e42e37fccf1f40da8e5f76ee21515840c09287"
+is-plain-object@^2.0.4:
+  version "2.0.4"
+  resolved "https://npm.goodeggs.com/is-plain-object/-/is-plain-object-2.0.4.tgz#2c163b3fafb1b606d9d17928f05c2a1c38e07677"
+  dependencies:
+    isobject "^3.0.1"
 
 is-regex@^1.1.4:
   version "1.1.4"
@@ -2494,29 +2597,34 @@ is-typed-array@^1.1.10, is-typed-array@^1.1.9:
     gopd "^1.0.1"
     has-tostringtag "^1.0.0"
 
-is-unicode-supported@^0.1.0:
-  version "0.1.0"
-  resolved "https://npm.goodeggs.com/is-unicode-supported/-/is-unicode-supported-0.1.0.tgz#3f26c76a809593b52bfa2ecb5710ed2779b522a7"
-
 is-weakref@^1.0.2:
   version "1.0.2"
   resolved "https://npm.goodeggs.com/is-weakref/-/is-weakref-1.0.2.tgz#9529f383a9338205e89765e0392efc2f100f06f2"
   dependencies:
     call-bind "^1.0.2"
 
+isarray@^2.0.5:
+  version "2.0.5"
+  resolved "https://npm.goodeggs.com/isarray/-/isarray-2.0.5.tgz#8af1e4c1221244cc62459faf38940d4e644a5723"
+
 isexe@^2.0.0:
   version "2.0.0"
   resolved "https://npm.goodeggs.com/isexe/-/isexe-2.0.0.tgz#e8fbf374dc556ff8947a10dcb0572d633f2cfa10"
+
+isobject@^3.0.1:
+  version "3.0.1"
+  resolved "https://npm.goodeggs.com/isobject/-/isobject-3.0.1.tgz#4e431e92b11a9731636aa1f9c8d1ccbcfdab78df"
 
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
   resolved "https://npm.goodeggs.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
 
-js-yaml@4.1.0, js-yaml@^4.1.0:
-  version "4.1.0"
-  resolved "https://npm.goodeggs.com/js-yaml/-/js-yaml-4.1.0.tgz#c1fb65f8f5017901cdd2c951864ba18458a10602"
+js-yaml@3.13.1:
+  version "3.13.1"
+  resolved "https://npm.goodeggs.com/js-yaml/-/js-yaml-3.13.1.tgz#aff151b30bfdfa8e49e05da22e7415e9dfa37847"
   dependencies:
-    argparse "^2.0.1"
+    argparse "^1.0.7"
+    esprima "^4.0.0"
 
 js-yaml@^3.13.1:
   version "3.14.1"
@@ -2524,6 +2632,12 @@ js-yaml@^3.13.1:
   dependencies:
     argparse "^1.0.7"
     esprima "^4.0.0"
+
+js-yaml@^4.1.0:
+  version "4.1.0"
+  resolved "https://npm.goodeggs.com/js-yaml/-/js-yaml-4.1.0.tgz#c1fb65f8f5017901cdd2c951864ba18458a10602"
+  dependencies:
+    argparse "^2.0.1"
 
 jsesc@^2.5.1:
   version "2.5.2"
@@ -2565,6 +2679,10 @@ json5@^2.2.2:
   dependencies:
     array-includes "^3.1.5"
     object.assign "^4.1.3"
+
+kind-of@^6.0.2:
+  version "6.0.3"
+  resolved "https://npm.goodeggs.com/kind-of/-/kind-of-6.0.3.tgz#07c05034a6c349fa06e24fa35aa76db4580ce4dd"
 
 levn@^0.4.1:
   version "0.4.1"
@@ -2613,6 +2731,13 @@ listr2@^4.0.5:
     through "^2.3.8"
     wrap-ansi "^7.0.0"
 
+locate-path@^3.0.0:
+  version "3.0.0"
+  resolved "https://npm.goodeggs.com/locate-path/-/locate-path-3.0.0.tgz#dbec3b3ab759758071b58fe59fc41871af21400e"
+  dependencies:
+    p-locate "^3.0.0"
+    path-exists "^3.0.0"
+
 locate-path@^5.0.0:
   version "5.0.0"
   resolved "https://npm.goodeggs.com/locate-path/-/locate-path-5.0.0.tgz#1afba396afd676a6d42504d0a67a3a7eb9f62aa0"
@@ -2637,12 +2762,11 @@ lodash@^4.17.15, lodash@^4.17.21:
   version "4.17.21"
   resolved "https://npm.goodeggs.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
 
-log-symbols@4.1.0:
-  version "4.1.0"
-  resolved "https://npm.goodeggs.com/log-symbols/-/log-symbols-4.1.0.tgz#3fbdbb95b4683ac9fc785111e792e558d4abd503"
+log-symbols@2.2.0:
+  version "2.2.0"
+  resolved "https://npm.goodeggs.com/log-symbols/-/log-symbols-2.2.0.tgz#5740e1c5d6f0dfda4ad9323b5332107ef6b4c40a"
   dependencies:
-    chalk "^4.1.0"
-    is-unicode-supported "^0.1.0"
+    chalk "^2.0.1"
 
 log-update@^4.0.0:
   version "4.0.0"
@@ -2659,6 +2783,12 @@ loose-envify@^1.4.0:
   dependencies:
     js-tokens "^3.0.0 || ^4.0.0"
 
+loupe@^2.3.1:
+  version "2.3.6"
+  resolved "https://npm.goodeggs.com/loupe/-/loupe-2.3.6.tgz#76e4af498103c532d1ecc9be102036a21f787b53"
+  dependencies:
+    get-func-name "^2.0.0"
+
 lru-cache@^5.1.1:
   version "5.1.1"
   resolved "https://npm.goodeggs.com/lru-cache/-/lru-cache-5.1.1.tgz#1da27e6710271947695daf6848e847f01d84b920"
@@ -2671,7 +2801,7 @@ lru-cache@^6.0.0:
   dependencies:
     yallist "^4.0.0"
 
-make-dir@^2.1.0:
+make-dir@^2.0.0, make-dir@^2.1.0:
   version "2.1.0"
   resolved "https://npm.goodeggs.com/make-dir/-/make-dir-2.1.0.tgz#5f0310e18b8be898cc07009295a30ae41e91e6f5"
   dependencies:
@@ -2701,11 +2831,11 @@ min-indent@^1.0.0:
   version "1.0.1"
   resolved "https://npm.goodeggs.com/min-indent/-/min-indent-1.0.1.tgz#a63f681673b30571fbe8bc25686ae746eefa9869"
 
-minimatch@5.0.1:
-  version "5.0.1"
-  resolved "https://npm.goodeggs.com/minimatch/-/minimatch-5.0.1.tgz#fb9022f7528125187c92bd9e9b6366be1cf3415b"
+minimatch@3.0.4:
+  version "3.0.4"
+  resolved "https://npm.goodeggs.com/minimatch/-/minimatch-3.0.4.tgz#5166e286457f03306064be5497e8dbb0c3d32083"
   dependencies:
-    brace-expansion "^2.0.1"
+    brace-expansion "^1.1.7"
 
 minimatch@^3.0.4, minimatch@^3.0.5, minimatch@^3.1.1, minimatch@^3.1.2:
   version "3.1.2"
@@ -2713,47 +2843,55 @@ minimatch@^3.0.4, minimatch@^3.0.5, minimatch@^3.1.1, minimatch@^3.1.2:
   dependencies:
     brace-expansion "^1.1.7"
 
-minimist@^1.2.0, minimist@^1.2.6:
+minimist@^1.2.0, minimist@^1.2.5, minimist@^1.2.6:
   version "1.2.8"
   resolved "https://npm.goodeggs.com/minimist/-/minimist-1.2.8.tgz#c1a464e7693302e082a075cee0c057741ac4772c"
 
-mocha@^10.2.0:
-  version "10.2.0"
-  resolved "https://npm.goodeggs.com/mocha/-/mocha-10.2.0.tgz#1fd4a7c32ba5ac372e03a17eef435bd00e5c68b8"
+mkdirp@0.5.4:
+  version "0.5.4"
+  resolved "https://npm.goodeggs.com/mkdirp/-/mkdirp-0.5.4.tgz#fd01504a6797ec5c9be81ff43d204961ed64a512"
   dependencies:
-    ansi-colors "4.1.1"
+    minimist "^1.2.5"
+
+mocha@^6.2.3:
+  version "6.2.3"
+  resolved "https://npm.goodeggs.com/mocha/-/mocha-6.2.3.tgz#e648432181d8b99393410212664450a4c1e31912"
+  dependencies:
+    ansi-colors "3.2.3"
     browser-stdout "1.3.1"
-    chokidar "3.5.3"
-    debug "4.3.4"
-    diff "5.0.0"
-    escape-string-regexp "4.0.0"
-    find-up "5.0.0"
-    glob "7.2.0"
+    debug "3.2.6"
+    diff "3.5.0"
+    escape-string-regexp "1.0.5"
+    find-up "3.0.0"
+    glob "7.1.3"
+    growl "1.10.5"
     he "1.2.0"
-    js-yaml "4.1.0"
-    log-symbols "4.1.0"
-    minimatch "5.0.1"
-    ms "2.1.3"
-    nanoid "3.3.3"
-    serialize-javascript "6.0.0"
-    strip-json-comments "3.1.1"
-    supports-color "8.1.1"
-    workerpool "6.2.1"
-    yargs "16.2.0"
-    yargs-parser "20.2.4"
-    yargs-unparser "2.0.0"
+    js-yaml "3.13.1"
+    log-symbols "2.2.0"
+    minimatch "3.0.4"
+    mkdirp "0.5.4"
+    ms "2.1.1"
+    node-environment-flags "1.0.5"
+    object.assign "4.1.0"
+    strip-json-comments "2.0.1"
+    supports-color "6.0.0"
+    which "1.3.1"
+    wide-align "1.1.3"
+    yargs "13.3.2"
+    yargs-parser "13.1.2"
+    yargs-unparser "1.6.0"
+
+ms@2.1.1:
+  version "2.1.1"
+  resolved "https://npm.goodeggs.com/ms/-/ms-2.1.1.tgz#30a5864eb3ebb0a66f2ebe6d727af06a09d86e0a"
 
 ms@2.1.2:
   version "2.1.2"
   resolved "https://npm.goodeggs.com/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
 
-ms@2.1.3, ms@^2.1.1:
+ms@^2.1.1:
   version "2.1.3"
   resolved "https://npm.goodeggs.com/ms/-/ms-2.1.3.tgz#574c8138ce1d2b5861f0b44579dbadd60c6615b2"
-
-nanoid@3.3.3:
-  version "3.3.3"
-  resolved "https://npm.goodeggs.com/nanoid/-/nanoid-3.3.3.tgz#fd8e8b7aa761fe807dba2d1b98fb7241bb724a25"
 
 natural-compare-lite@^1.4.0:
   version "1.4.0"
@@ -2766,6 +2904,13 @@ natural-compare@^1.4.0:
 nice-try@^1.0.4:
   version "1.0.5"
   resolved "https://npm.goodeggs.com/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
+
+node-environment-flags@1.0.5:
+  version "1.0.5"
+  resolved "https://npm.goodeggs.com/node-environment-flags/-/node-environment-flags-1.0.5.tgz#fa930275f5bf5dae188d6192b24b4c8bbac3d76a"
+  dependencies:
+    object.getownpropertydescriptors "^2.0.3"
+    semver "^5.7.0"
 
 node-releases@^2.0.12:
   version "2.0.12"
@@ -2804,9 +2949,18 @@ object-inspect@^1.12.2, object-inspect@^1.12.3, object-inspect@^1.9.0:
   version "1.12.3"
   resolved "https://npm.goodeggs.com/object-inspect/-/object-inspect-1.12.3.tgz#ba62dffd67ee256c8c086dfae69e016cd1f198b9"
 
-object-keys@^1.1.1:
+object-keys@^1.0.11, object-keys@^1.1.1:
   version "1.1.1"
   resolved "https://npm.goodeggs.com/object-keys/-/object-keys-1.1.1.tgz#1c47f272df277f3b1daf061677d9c82e2322c60e"
+
+object.assign@4.1.0:
+  version "4.1.0"
+  resolved "https://npm.goodeggs.com/object.assign/-/object.assign-4.1.0.tgz#968bf1100d7956bb3ca086f006f846b3bc4008da"
+  dependencies:
+    define-properties "^1.1.2"
+    function-bind "^1.1.1"
+    has-symbols "^1.0.0"
+    object-keys "^1.0.11"
 
 object.assign@^4.1.3, object.assign@^4.1.4:
   version "4.1.4"
@@ -2832,6 +2986,16 @@ object.fromentries@^2.0.6:
     call-bind "^1.0.2"
     define-properties "^1.1.4"
     es-abstract "^1.20.4"
+
+object.getownpropertydescriptors@^2.0.3:
+  version "2.1.6"
+  resolved "https://npm.goodeggs.com/object.getownpropertydescriptors/-/object.getownpropertydescriptors-2.1.6.tgz#5e5c384dd209fa4efffead39e3a0512770ccc312"
+  dependencies:
+    array.prototype.reduce "^1.0.5"
+    call-bind "^1.0.2"
+    define-properties "^1.2.0"
+    es-abstract "^1.21.2"
+    safe-array-concat "^1.0.0"
 
 object.hasown@^1.1.2:
   version "1.1.2"
@@ -2879,7 +3043,7 @@ p-finally@^1.0.0:
   version "1.0.0"
   resolved "https://npm.goodeggs.com/p-finally/-/p-finally-1.0.0.tgz#3fbcfb15b899a44123b34b6dcc18b724336a2cae"
 
-p-limit@^2.2.0:
+p-limit@^2.0.0, p-limit@^2.2.0:
   version "2.3.0"
   resolved "https://npm.goodeggs.com/p-limit/-/p-limit-2.3.0.tgz#3dd33c647a214fdfffd835933eb086da0dc21db1"
   dependencies:
@@ -2890,6 +3054,12 @@ p-limit@^3.0.2:
   resolved "https://npm.goodeggs.com/p-limit/-/p-limit-3.1.0.tgz#e1daccbe78d0d1388ca18c64fea38e3e57e3706b"
   dependencies:
     yocto-queue "^0.1.0"
+
+p-locate@^3.0.0:
+  version "3.0.0"
+  resolved "https://npm.goodeggs.com/p-locate/-/p-locate-3.0.0.tgz#322d69a05c0264b25997d9f40cd8a891ab0064a4"
+  dependencies:
+    p-limit "^2.0.0"
 
 p-locate@^4.1.0:
   version "4.1.0"
@@ -2935,6 +3105,10 @@ parse-json@^5.0.0:
     json-parse-even-better-errors "^2.3.0"
     lines-and-columns "^1.1.6"
 
+path-exists@^3.0.0:
+  version "3.0.0"
+  resolved "https://npm.goodeggs.com/path-exists/-/path-exists-3.0.0.tgz#ce0ebeaa5f78cb18925ea7d810d7b59b010fd515"
+
 path-exists@^4.0.0:
   version "4.0.0"
   resolved "https://npm.goodeggs.com/path-exists/-/path-exists-4.0.0.tgz#513bdbe2d3b95d7762e8c1137efa195c6c61b5b3"
@@ -2959,6 +3133,10 @@ path-type@^4.0.0:
   version "4.0.0"
   resolved "https://npm.goodeggs.com/path-type/-/path-type-4.0.0.tgz#84ed01c0a7ba380afe09d90a8c180dcd9d03043b"
 
+pathval@^1.1.1:
+  version "1.1.1"
+  resolved "https://npm.goodeggs.com/pathval/-/pathval-1.1.1.tgz#8534e77a77ce7ac5a2512ea21e0fdb8fcf6c3d8d"
+
 picocolors@^1.0.0:
   version "1.0.0"
   resolved "https://npm.goodeggs.com/picocolors/-/picocolors-1.0.0.tgz#cb5bdc74ff3f51892236eaf79d68bc44564ab81c"
@@ -2974,6 +3152,16 @@ pidtree@^0.5.0:
 pify@^4.0.1:
   version "4.0.1"
   resolved "https://npm.goodeggs.com/pify/-/pify-4.0.1.tgz#4b2cd25c50d598735c50292224fd8c6df41e3231"
+
+pirates@^4.0.5:
+  version "4.0.6"
+  resolved "https://npm.goodeggs.com/pirates/-/pirates-4.0.6.tgz#3018ae32ecfcff6c29ba2267cbf21166ac1f36b9"
+
+pkg-dir@^3.0.0:
+  version "3.0.0"
+  resolved "https://npm.goodeggs.com/pkg-dir/-/pkg-dir-3.0.0.tgz#2749020f239ed990881b1f71210d51eb6523bea3"
+  dependencies:
+    find-up "^3.0.0"
 
 pkg-dir@^4.2.0:
   version "4.2.0"
@@ -3031,12 +3219,6 @@ queue-microtask@^1.2.2:
 rambda@^7.1.0:
   version "7.5.0"
   resolved "https://npm.goodeggs.com/rambda/-/rambda-7.5.0.tgz#1865044c59bc0b16f63026c6e5a97e4b1bbe98fe"
-
-randombytes@^2.1.0:
-  version "2.1.0"
-  resolved "https://npm.goodeggs.com/randombytes/-/randombytes-2.1.0.tgz#df6f84372f0270dc65cdf6291349ab7a473d4f2a"
-  dependencies:
-    safe-buffer "^5.1.0"
 
 react-is@^16.13.1:
   version "16.13.1"
@@ -3118,6 +3300,10 @@ require-directory@^2.1.1:
   version "2.1.1"
   resolved "https://npm.goodeggs.com/require-directory/-/require-directory-2.1.1.tgz#8c64ad5fd30dab1c976e2344ffe7f792a6a6df42"
 
+require-main-filename@^2.0.0:
+  version "2.0.0"
+  resolved "https://npm.goodeggs.com/require-main-filename/-/require-main-filename-2.0.0.tgz#d0b329ecc7cc0f61649f62215be69af54aa8989b"
+
 resolve-from@^3.0.0:
   version "3.0.0"
   resolved "https://npm.goodeggs.com/resolve-from/-/resolve-from-3.0.0.tgz#b22c7af7d9d6881bc8b6e653335eebcb0a188748"
@@ -3179,9 +3365,14 @@ rxjs@^7.5.5:
   dependencies:
     tslib "^2.1.0"
 
-safe-buffer@^5.1.0:
-  version "5.2.1"
-  resolved "https://npm.goodeggs.com/safe-buffer/-/safe-buffer-5.2.1.tgz#1eaf9fa9bdb1fdd4ec75f58f9cdb4e6b7827eec6"
+safe-array-concat@^1.0.0:
+  version "1.0.0"
+  resolved "https://npm.goodeggs.com/safe-array-concat/-/safe-array-concat-1.0.0.tgz#2064223cba3c08d2ee05148eedbc563cd6d84060"
+  dependencies:
+    call-bind "^1.0.2"
+    get-intrinsic "^1.2.0"
+    has-symbols "^1.0.3"
+    isarray "^2.0.5"
 
 safe-regex-test@^1.0.0:
   version "1.0.0"
@@ -3201,7 +3392,7 @@ semver-compare@^1.0.0:
   version "1.0.0"
   resolved "https://npm.goodeggs.com/semver-compare/-/semver-compare-1.0.0.tgz#0dee216a1c941ab37e9efb1788f6afc5ff5537fc"
 
-"semver@2 || 3 || 4 || 5", semver@^5.5.0, semver@^5.6.0:
+"semver@2 || 3 || 4 || 5", semver@^5.5.0, semver@^5.6.0, semver@^5.7.0:
   version "5.7.1"
   resolved "https://npm.goodeggs.com/semver/-/semver-5.7.1.tgz#a954f931aeba508d307bbf069eff0c01c96116f7"
 
@@ -3215,11 +3406,15 @@ semver@^7.3.7:
   dependencies:
     lru-cache "^6.0.0"
 
-serialize-javascript@6.0.0:
-  version "6.0.0"
-  resolved "https://npm.goodeggs.com/serialize-javascript/-/serialize-javascript-6.0.0.tgz#efae5d88f45d7924141da8b5c3a7a7e663fefeb8"
+set-blocking@^2.0.0:
+  version "2.0.0"
+  resolved "https://npm.goodeggs.com/set-blocking/-/set-blocking-2.0.0.tgz#045f9782d011ae9a6803ddd382b24392b3d890f7"
+
+shallow-clone@^3.0.0:
+  version "3.0.1"
+  resolved "https://npm.goodeggs.com/shallow-clone/-/shallow-clone-3.0.1.tgz#8f2981ad92531f55035b01fb230769a40e02efa3"
   dependencies:
-    randombytes "^2.1.0"
+    kind-of "^6.0.2"
 
 shebang-command@^1.2.0:
   version "1.2.0"
@@ -3284,6 +3479,17 @@ slice-ansi@^5.0.0:
     ansi-styles "^6.0.0"
     is-fullwidth-code-point "^4.0.0"
 
+source-map-support@^0.5.16:
+  version "0.5.21"
+  resolved "https://npm.goodeggs.com/source-map-support/-/source-map-support-0.5.21.tgz#04fe7c7f9e1ed2d662233c28cb2b35b9f63f6e4f"
+  dependencies:
+    buffer-from "^1.0.0"
+    source-map "^0.6.0"
+
+source-map@^0.6.0:
+  version "0.6.1"
+  resolved "https://npm.goodeggs.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
+
 spdx-correct@^3.0.0:
   version "3.2.0"
   resolved "https://npm.goodeggs.com/spdx-correct/-/spdx-correct-3.2.0.tgz#4f5ab0668f0059e34f9c00dce331784a12de4e9c"
@@ -3317,6 +3523,21 @@ string-argv@^0.3.1:
 string-natural-compare@^3.0.1:
   version "3.0.1"
   resolved "https://npm.goodeggs.com/string-natural-compare/-/string-natural-compare-3.0.1.tgz#7a42d58474454963759e8e8b7ae63d71c1e7fdf4"
+
+"string-width@^1.0.2 || 2":
+  version "2.1.1"
+  resolved "https://npm.goodeggs.com/string-width/-/string-width-2.1.1.tgz#ab93f27a8dc13d28cac815c462143a6d9012ae9e"
+  dependencies:
+    is-fullwidth-code-point "^2.0.0"
+    strip-ansi "^4.0.0"
+
+string-width@^3.0.0, string-width@^3.1.0:
+  version "3.1.0"
+  resolved "https://npm.goodeggs.com/string-width/-/string-width-3.1.0.tgz#22767be21b62af1081574306f69ac51b62203961"
+  dependencies:
+    emoji-regex "^7.0.1"
+    is-fullwidth-code-point "^2.0.0"
+    strip-ansi "^5.1.0"
 
 string-width@^4.1.0, string-width@^4.2.0, string-width@^4.2.3:
   version "4.2.3"
@@ -3371,6 +3592,18 @@ string.prototype.trimstart@^1.0.6:
     define-properties "^1.1.4"
     es-abstract "^1.20.4"
 
+strip-ansi@^4.0.0:
+  version "4.0.0"
+  resolved "https://npm.goodeggs.com/strip-ansi/-/strip-ansi-4.0.0.tgz#a8479022eb1ac368a871389b635262c505ee368f"
+  dependencies:
+    ansi-regex "^3.0.0"
+
+strip-ansi@^5.0.0, strip-ansi@^5.1.0, strip-ansi@^5.2.0:
+  version "5.2.0"
+  resolved "https://npm.goodeggs.com/strip-ansi/-/strip-ansi-5.2.0.tgz#8c9a536feb6afc962bdfa5b104a5091c1ad9c0ae"
+  dependencies:
+    ansi-regex "^4.1.0"
+
 strip-ansi@^6.0.0, strip-ansi@^6.0.1:
   version "6.0.1"
   resolved "https://npm.goodeggs.com/strip-ansi/-/strip-ansi-6.0.1.tgz#9e26c63d30f53443e9489495b2105d37b67a85d9"
@@ -3401,15 +3634,19 @@ strip-indent@^3.0.0:
   dependencies:
     min-indent "^1.0.0"
 
-strip-json-comments@3.1.1, strip-json-comments@^3.1.0, strip-json-comments@^3.1.1:
+strip-json-comments@2.0.1:
+  version "2.0.1"
+  resolved "https://npm.goodeggs.com/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
+
+strip-json-comments@^3.1.0, strip-json-comments@^3.1.1:
   version "3.1.1"
   resolved "https://npm.goodeggs.com/strip-json-comments/-/strip-json-comments-3.1.1.tgz#31f1281b3832630434831c310c01cccda8cbe006"
 
-supports-color@8.1.1:
-  version "8.1.1"
-  resolved "https://npm.goodeggs.com/supports-color/-/supports-color-8.1.1.tgz#cd6fc17e28500cff56c1b86c0a7fd4a54a73005c"
+supports-color@6.0.0:
+  version "6.0.0"
+  resolved "https://npm.goodeggs.com/supports-color/-/supports-color-6.0.0.tgz#76cfe742cf1f41bb9b1c29ad03068c05b4c0e40a"
   dependencies:
-    has-flag "^4.0.0"
+    has-flag "^3.0.0"
 
 supports-color@^5.3.0:
   version "5.5.0"
@@ -3478,9 +3715,9 @@ type-check@^0.4.0, type-check@~0.4.0:
   dependencies:
     prelude-ls "^1.2.1"
 
-type-detect@0.1.1:
-  version "0.1.1"
-  resolved "https://npm.goodeggs.com/type-detect/-/type-detect-0.1.1.tgz#0ba5ec2a885640e470ea4e8505971900dac58822"
+type-detect@^4.0.0, type-detect@^4.0.5:
+  version "4.0.8"
+  resolved "https://npm.goodeggs.com/type-detect/-/type-detect-4.0.8.tgz#7646fb5f18871cfbb7749e69bd39a6388eb7450c"
 
 type-fest@^0.20.2:
   version "0.20.2"
@@ -3568,6 +3805,10 @@ which-boxed-primitive@^1.0.2:
     is-string "^1.0.5"
     is-symbol "^1.0.3"
 
+which-module@^2.0.0:
+  version "2.0.1"
+  resolved "https://npm.goodeggs.com/which-module/-/which-module-2.0.1.tgz#776b1fe35d90aebe99e8ac15eb24093389a4a409"
+
 which-typed-array@^1.1.9:
   version "1.1.9"
   resolved "https://npm.goodeggs.com/which-typed-array/-/which-typed-array-1.1.9.tgz#307cf898025848cf995e795e8423c7f337efbde6"
@@ -3579,7 +3820,7 @@ which-typed-array@^1.1.9:
     has-tostringtag "^1.0.0"
     is-typed-array "^1.1.10"
 
-which@^1.2.9:
+which@1.3.1, which@^1.2.9:
   version "1.3.1"
   resolved "https://npm.goodeggs.com/which/-/which-1.3.1.tgz#a45043d54f5805316da8d62f9f50918d3da70b0a"
   dependencies:
@@ -3591,13 +3832,23 @@ which@^2.0.1:
   dependencies:
     isexe "^2.0.0"
 
+wide-align@1.1.3:
+  version "1.1.3"
+  resolved "https://npm.goodeggs.com/wide-align/-/wide-align-1.1.3.tgz#ae074e6bdc0c14a431e804e624549c633b000457"
+  dependencies:
+    string-width "^1.0.2 || 2"
+
 word-wrap@^1.2.3:
   version "1.2.3"
   resolved "https://npm.goodeggs.com/word-wrap/-/word-wrap-1.2.3.tgz#610636f6b1f703891bd34771ccb17fb93b47079c"
 
-workerpool@6.2.1:
-  version "6.2.1"
-  resolved "https://npm.goodeggs.com/workerpool/-/workerpool-6.2.1.tgz#46fc150c17d826b86a008e5a4508656777e9c343"
+wrap-ansi@^5.1.0:
+  version "5.1.0"
+  resolved "https://npm.goodeggs.com/wrap-ansi/-/wrap-ansi-5.1.0.tgz#1fd1f67235d5b6d0fee781056001bfb694c03b09"
+  dependencies:
+    ansi-styles "^3.2.0"
+    string-width "^3.0.0"
+    strip-ansi "^5.0.0"
 
 wrap-ansi@^6.2.0:
   version "6.2.0"
@@ -3619,6 +3870,10 @@ wrappy@1:
   version "1.0.2"
   resolved "https://npm.goodeggs.com/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
 
+y18n@^4.0.0:
+  version "4.0.3"
+  resolved "https://npm.goodeggs.com/y18n/-/y18n-4.0.3.tgz#b5f259c82cd6e336921efd7bfd8bf560de9eeedf"
+
 y18n@^5.0.5:
   version "5.0.8"
   resolved "https://npm.goodeggs.com/y18n/-/y18n-5.0.8.tgz#7f4934d0f7ca8c56f95314939ddcd2dd91ce1d55"
@@ -3635,38 +3890,39 @@ yaml@^1.10.0, yaml@^1.10.2:
   version "1.10.2"
   resolved "https://npm.goodeggs.com/yaml/-/yaml-1.10.2.tgz#2301c5ffbf12b467de8da2333a459e29e7920e4b"
 
-yargs-parser@20.2.4:
-  version "20.2.4"
-  resolved "https://npm.goodeggs.com/yargs-parser/-/yargs-parser-20.2.4.tgz#b42890f14566796f85ae8e3a25290d205f154a54"
-
-yargs-parser@^20.2.2:
-  version "20.2.9"
-  resolved "https://npm.goodeggs.com/yargs-parser/-/yargs-parser-20.2.9.tgz#2eb7dc3b0289718fc295f362753845c41a0c94ee"
+yargs-parser@13.1.2, yargs-parser@^13.1.2:
+  version "13.1.2"
+  resolved "https://npm.goodeggs.com/yargs-parser/-/yargs-parser-13.1.2.tgz#130f09702ebaeef2650d54ce6e3e5706f7a4fb38"
+  dependencies:
+    camelcase "^5.0.0"
+    decamelize "^1.2.0"
 
 yargs-parser@^21.1.1:
   version "21.1.1"
   resolved "https://npm.goodeggs.com/yargs-parser/-/yargs-parser-21.1.1.tgz#9096bceebf990d21bb31fa9516e0ede294a77d35"
 
-yargs-unparser@2.0.0:
-  version "2.0.0"
-  resolved "https://npm.goodeggs.com/yargs-unparser/-/yargs-unparser-2.0.0.tgz#f131f9226911ae5d9ad38c432fe809366c2325eb"
+yargs-unparser@1.6.0:
+  version "1.6.0"
+  resolved "https://npm.goodeggs.com/yargs-unparser/-/yargs-unparser-1.6.0.tgz#ef25c2c769ff6bd09e4b0f9d7c605fb27846ea9f"
   dependencies:
-    camelcase "^6.0.0"
-    decamelize "^4.0.0"
-    flat "^5.0.2"
-    is-plain-obj "^2.1.0"
+    flat "^4.1.0"
+    lodash "^4.17.15"
+    yargs "^13.3.0"
 
-yargs@16.2.0:
-  version "16.2.0"
-  resolved "https://npm.goodeggs.com/yargs/-/yargs-16.2.0.tgz#1c82bf0f6b6a66eafce7ef30e376f49a12477f66"
+yargs@13.3.2, yargs@^13.3.0:
+  version "13.3.2"
+  resolved "https://npm.goodeggs.com/yargs/-/yargs-13.3.2.tgz#ad7ffefec1aa59565ac915f82dccb38a9c31a2dd"
   dependencies:
-    cliui "^7.0.2"
-    escalade "^3.1.1"
-    get-caller-file "^2.0.5"
+    cliui "^5.0.0"
+    find-up "^3.0.0"
+    get-caller-file "^2.0.1"
     require-directory "^2.1.1"
-    string-width "^4.2.0"
-    y18n "^5.0.5"
-    yargs-parser "^20.2.2"
+    require-main-filename "^2.0.0"
+    set-blocking "^2.0.0"
+    string-width "^3.0.0"
+    which-module "^2.0.0"
+    y18n "^4.0.0"
+    yargs-parser "^13.1.2"
 
 yargs@^17.6.0:
   version "17.7.2"
