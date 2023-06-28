@@ -2,6 +2,10 @@
 # yarn lockfile v1
 
 
+"@aashutoshrathi/word-wrap@^1.2.3":
+  version "1.2.6"
+  resolved "https://npm.goodeggs.com/@aashutoshrathi%2fword-wrap/-/word-wrap-1.2.6.tgz#bd9154aec9983f77b3a034ecaa015c2e4201f6cf"
+
 "@ampproject/remapping@^2.2.0":
   version "2.2.1"
   resolved "https://npm.goodeggs.com/@ampproject%2fremapping/-/remapping-2.2.1.tgz#99e8e11851128b8702cd57c33684f1d0f260b630"
@@ -1287,7 +1291,7 @@ array-buffer-byte-length@^1.0.0:
     call-bind "^1.0.2"
     is-array-buffer "^3.0.1"
 
-array-includes@^3.1.5, array-includes@^3.1.6:
+array-includes@^3.1.6:
   version "3.1.6"
   resolved "https://npm.goodeggs.com/array-includes/-/array-includes-3.1.6.tgz#9e9e720e194f198266ba9e18c29e6a9b0e4b225f"
   dependencies:
@@ -1446,8 +1450,8 @@ camelcase@^5.0.0:
   resolved "https://npm.goodeggs.com/camelcase/-/camelcase-5.3.1.tgz#e3c9b31569e106811df242f715725a1f4c494320"
 
 caniuse-lite@^1.0.30001503:
-  version "1.0.30001508"
-  resolved "https://npm.goodeggs.com/caniuse-lite/-/caniuse-lite-1.0.30001508.tgz#4461bbc895c692a96da399639cc1e146e7302a33"
+  version "1.0.30001509"
+  resolved "https://npm.goodeggs.com/caniuse-lite/-/caniuse-lite-1.0.30001509.tgz#2b7ad5265392d6d2de25cd8776d1ab3899570d14"
 
 chai@^4.3.7:
   version "4.3.7"
@@ -1713,8 +1717,8 @@ eastasianwidth@^0.2.0:
   resolved "https://npm.goodeggs.com/eastasianwidth/-/eastasianwidth-0.2.0.tgz#696ce2ec0aa0e6ea93a397ffcf24aa7840c827cb"
 
 electron-to-chromium@^1.4.431:
-  version "1.4.442"
-  resolved "https://npm.goodeggs.com/electron-to-chromium/-/electron-to-chromium-1.4.442.tgz#455f4c5bd6ae73afb634dcffee6f356c26c8e294"
+  version "1.4.443"
+  resolved "https://npm.goodeggs.com/electron-to-chromium/-/electron-to-chromium-1.4.443.tgz#fa7e866b2ba3684259c8d373ab22ddd0e31d1a83"
 
 emoji-regex@^7.0.1:
   version "7.0.3"
@@ -2674,11 +2678,13 @@ json5@^2.2.2:
   resolved "https://npm.goodeggs.com/json5/-/json5-2.2.3.tgz#78cd6f1a19bdc12b73db5ad0c61efd66c1e29283"
 
 "jsx-ast-utils@^2.4.1 || ^3.0.0":
-  version "3.3.3"
-  resolved "https://npm.goodeggs.com/jsx-ast-utils/-/jsx-ast-utils-3.3.3.tgz#76b3e6e6cece5c69d49a5792c3d01bd1a0cdc7ea"
+  version "3.3.4"
+  resolved "https://npm.goodeggs.com/jsx-ast-utils/-/jsx-ast-utils-3.3.4.tgz#b896535fed5b867650acce5a9bd4135ffc7b3bf9"
   dependencies:
-    array-includes "^3.1.5"
-    object.assign "^4.1.3"
+    array-includes "^3.1.6"
+    array.prototype.flat "^1.3.1"
+    object.assign "^4.1.4"
+    object.values "^1.1.6"
 
 kind-of@^6.0.2:
   version "6.0.3"
@@ -2962,7 +2968,7 @@ object.assign@4.1.0:
     has-symbols "^1.0.0"
     object-keys "^1.0.11"
 
-object.assign@^4.1.3, object.assign@^4.1.4:
+object.assign@^4.1.4:
   version "4.1.4"
   resolved "https://npm.goodeggs.com/object.assign/-/object.assign-4.1.4.tgz#9673c7c7c351ab8c4d0b516f4343ebf4dfb7799f"
   dependencies:
@@ -3029,15 +3035,15 @@ opencollective-postinstall@^2.0.2:
   resolved "https://npm.goodeggs.com/opencollective-postinstall/-/opencollective-postinstall-2.0.3.tgz#7a0fff978f6dbfa4d006238fbac98ed4198c3259"
 
 optionator@^0.9.1:
-  version "0.9.1"
-  resolved "https://npm.goodeggs.com/optionator/-/optionator-0.9.1.tgz#4f236a6373dae0566a6d43e1326674f50c291499"
+  version "0.9.3"
+  resolved "https://npm.goodeggs.com/optionator/-/optionator-0.9.3.tgz#007397d44ed1872fdc6ed31360190f81814e2c64"
   dependencies:
+    "@aashutoshrathi/word-wrap" "^1.2.3"
     deep-is "^0.1.3"
     fast-levenshtein "^2.0.6"
     levn "^0.4.1"
     prelude-ls "^1.2.1"
     type-check "^0.4.0"
-    word-wrap "^1.2.3"
 
 p-finally@^1.0.0:
   version "1.0.0"
@@ -3661,8 +3667,8 @@ supports-color@^7.1.0:
     has-flag "^4.0.0"
 
 supports-color@^9.2.2:
-  version "9.3.1"
-  resolved "https://npm.goodeggs.com/supports-color/-/supports-color-9.3.1.tgz#34e4ad3c71c9a39dae3254ecc46c9b74e89e15a6"
+  version "9.4.0"
+  resolved "https://npm.goodeggs.com/supports-color/-/supports-color-9.4.0.tgz#17bfcf686288f531db3dea3215510621ccb55954"
 
 supports-preserve-symlinks-flag@^1.0.0:
   version "1.0.0"
@@ -3744,8 +3750,8 @@ typed-array-length@^1.0.4:
     is-typed-array "^1.1.9"
 
 typescript@^5.1.3:
-  version "5.1.3"
-  resolved "https://npm.goodeggs.com/typescript/-/typescript-5.1.3.tgz#8d84219244a6b40b6fb2b33cc1c062f715b9e826"
+  version "5.1.5"
+  resolved "https://npm.goodeggs.com/typescript/-/typescript-5.1.5.tgz#a3ae755082488b6046fe64345d293ef26af08671"
 
 unbox-primitive@^1.0.2:
   version "1.0.2"
@@ -3837,10 +3843,6 @@ wide-align@1.1.3:
   resolved "https://npm.goodeggs.com/wide-align/-/wide-align-1.1.3.tgz#ae074e6bdc0c14a431e804e624549c633b000457"
   dependencies:
     string-width "^1.0.2 || 2"
-
-word-wrap@^1.2.3:
-  version "1.2.3"
-  resolved "https://npm.goodeggs.com/word-wrap/-/word-wrap-1.2.3.tgz#610636f6b1f703891bd34771ccb17fb93b47079c"
 
 wrap-ansi@^5.1.0:
   version "5.1.0"
