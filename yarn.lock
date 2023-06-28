@@ -1505,10 +1505,6 @@ cliui@^8.0.1:
     strip-ansi "^6.0.1"
     wrap-ansi "^7.0.0"
 
-coffee-script@>=1.7.x:
-  version "1.12.7"
-  resolved "https://npm.goodeggs.com/coffee-script/-/coffee-script-1.12.7.tgz#c05dae0cb79591d05b3070a8433a98c9a89ccc53"
-
 color-convert@^1.9.0:
   version "1.9.3"
   resolved "https://npm.goodeggs.com/color-convert/-/color-convert-1.9.3.tgz#bb71850690e1f136567de629d2d5471deda4c1e8"

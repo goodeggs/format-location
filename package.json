@@ -23,7 +23,6 @@
     "@goodeggs/toolkit": "^7.0.1",
     "@goodeggs/tsconfig": "^2.0.2",
     "chai": "^1.9.1",
-    "coffee-script": ">=1.7.x",
     "mocha": "^10.2.0",
     "typescript": "^5.1.3"
   },
