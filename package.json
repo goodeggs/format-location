@@ -30,15 +30,13 @@
     "typescript": "^5.1.3"
   },
   "scripts": {
-    "build": "yarn run build:clean && yarn run build:transpile && yarn run build:types",
-    "build:transpile": "babel --extensions=.ts,.js,.jsx,.tsx src --out-dir lib --copy-files",
+    "build": "yarn run build:clean && babel --extensions=.ts,.js,.jsx,.tsx src -d lib && yarn run build:types",
     "build:clean": "rm -rf lib",
     "build:types": "tsc --project tsconfig.declarations.json",
-    "lint": "yarn run lint:src ",
+    "prepublishOnly": "yarn run build",
+    "lint": "getk run lint-es '**/*.{js,jsx,ts,tsx}' --ignore-path .gitignore",
     "lint:fix": "getk run fix-es --ignore-path .gitignore",
-    "lint:src": "yarn run lint:src:glob '**/*.{js,jsx,ts,tsx}'",
-    "lint:src:glob": "getk run lint-es --ignore-path .gitignore",
-    "test": "yarn run lint && yarn run typecheck && yarn run test:mocha",
+    "test": " yarn run typecheck && yarn run test:mocha && yarn run lint ",
     "test:mocha": "yarn run test:mocha:glob 'src/**/*.test.ts'",
     "test:mocha:glob": "NODE_ENV=test mocha --opts mocha.opts --extension ts,js,jsx,tsx",
     "typecheck": "tsc"
