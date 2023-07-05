@@ -38,21 +38,21 @@ class FormatLocation {
     });
   }
 
-  containsText(string: string | undefined): boolean {
-    return !!(string != null ? string.trim().length : undefined);
+  containsText(string: string | undefined): number | undefined {
+    return string != null ? string.trim().length : undefined;
   }
 
   formatLocation(location: Location, formatString?: keyof LocationFormats): string {
     // if there isn't `city`, `zip` and `state`, assume this location object hasn't been converted
     // to the full details structure and the entire address is in the `address` field
-    if (!location.city || !location.zip || !location.state || !formatString) {
+    if (!location.city || !location.zip || !location.state || formatString === undefined) {
       return location.address || '';
     }
 
-    const [format, addressLineSeparator] = this._locationFormats[formatString] || [
-      formatString,
-      ', ',
-    ];
+    const [format, addressLineSeparator] =
+      this._locationFormats[formatString] !== undefined
+        ? this._locationFormats[formatString]
+        : [formatString, ', '];
 
     location = JSON.parse(JSON.stringify(location));
 
@@ -77,7 +77,7 @@ class FormatLocation {
         : coords != null
         ? coords.lng
         : undefined;
-    return this.formatObject(location, format);
+    return this.formatObject(location, format as string);
   }
 }
 
