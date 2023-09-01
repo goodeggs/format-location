@@ -8,7 +8,7 @@ export interface Location {
   address2?: string;
   vagueAddress?: string;
   coordinates?: {latitude: string; longitude: string; lat?: string; lng?: string};
-  coords?: {latitude: string; longitude: string; lat: string; lng: string};
+  coords?: {latitude: string; longitude: string; lat?: string; lng?: string};
   lat?: string;
   lng?: string;
 }
@@ -60,23 +60,9 @@ class FormatLocation {
       .filter(this.containsText)
       .join(addressLineSeparator);
     location.vagueAddress = location.vagueAddress || location.addressLine;
-    const coords = location.coordinates != null ? location.coordinates : location.coords;
-    location.lat =
-      (coords != null ? coords.latitude : undefined) != null
-        ? coords != null
-          ? coords.latitude
-          : undefined
-        : coords != null
-        ? coords.lat
-        : undefined;
-    location.lng =
-      (coords != null ? coords.longitude : undefined) != null
-        ? coords != null
-          ? coords.longitude
-          : undefined
-        : coords != null
-        ? coords.lng
-        : undefined;
+    const coords = location.coordinates ?? location.coords;
+    location.lat = coords?.latitude ?? coords?.lat ?? undefined;
+    location.lng = coords?.longitude ?? coords?.lng ?? undefined;
     return this.formatObject(location, format as string);
   }
 }
