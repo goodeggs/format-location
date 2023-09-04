@@ -65,10 +65,10 @@ describe('formatLocation', function () {
       '530 Hampshire Street, Suite 301',
     ));
 
-  return describe('a vague address in the location', function () {
+  describe('a vague address in the location', function () {
     beforeEach(() => (location.vagueAddress = 'Hampshire & Mariposa (by the slow club)'));
 
-    return it('shortVague returns vague address', () =>
+    it('shortVague returns vague address', () =>
       expect(new FormatLocation().formatLocation(location, 'shortVague')).to.equal(
         location.vagueAddress,
       ));
