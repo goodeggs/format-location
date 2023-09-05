@@ -1,0 +1,10 @@
+{
+  "extends": "@goodeggs/tsconfig/base",
+  "compilerOptions": {
+    "downlevelIteration": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "noImplicitAny": true
+  },
+  "exclude": ["node_modules/**/*", "lib"]
+}

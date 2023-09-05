@@ -15,15 +15,31 @@
   "homepage": "https://github.com/goodeggs/format-location",
   "bugs": "https://github.com/goodeggs/format-location/issues",
   "devDependencies": {
-    "coffee-script": ">=1.7.x",
-    "mocha": "^1.x.x",
-    "chai": "^1.9.1"
+    "@babel/cli": "^7.22.5",
+    "@babel/core": "^7.22.5",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.22.5",
+    "@babel/preset-typescript": "^7.22.5",
+    "@babel/register": "^7.22.5",
+    "@goodeggs/toolkit": "^8.0.0",
+    "@goodeggs/tsconfig": "^2.0.2",
+    "@types/chai": "^4.3.5",
+    "@types/mocha": "^10.0.1",
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0",
+    "typescript": "^5.1.3"
   },
   "scripts": {
-    "compile": "coffee --bare --compile --output lib/ src/",
-    "build": "npm run compile",
-    "test": "mocha",
-    "pretest": "npm run build"
+    "build": "yarn run build:clean && babel --extensions=.ts,.js,.jsx,.tsx src -d lib && yarn run build:types",
+    "build:clean": "rm -rf lib",
+    "build:types": "tsc --project tsconfig.declarations.json",
+    "prepublishOnly": "yarn run build",
+    "lint": "getk run lint-es '**/*.{js,jsx,ts,tsx}' --ignore-path .gitignore",
+    "lint:fix": "getk run fix-es --ignore-path .gitignore",
+    "test": " yarn run typecheck && yarn run test:mocha && yarn run lint ",
+    "test:mocha": "yarn run test:mocha:glob 'src/**/*test.ts'",
+    "test:mocha:glob": "NODE_ENV=test mocha --require @babel/polyfill --require .babel.register.ts --extension ts,js,jsx,tsx",
+    "typecheck": "tsc"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
